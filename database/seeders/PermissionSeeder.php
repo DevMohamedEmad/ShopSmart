@@ -19,6 +19,6 @@ class PermissionSeeder extends Seeder
         );
 
         $role = Role::whereName('saas')->first();
-        $role->syncPermission($permissions);
+        $role->syncPermissions($permissions);
     }
 }
